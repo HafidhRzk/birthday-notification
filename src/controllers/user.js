@@ -155,7 +155,7 @@ class User {
         await sendMessageQueue.removeJobs(job.id);
       });
 
-      return res.status(200).json({ message: "Delayed Queue Cleared" });
+      return res.status(200).json({ message: "All Queue Cleared" });
     } catch (error) {
       next(error);
     }
